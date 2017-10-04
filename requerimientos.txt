@@ -1,0 +1,5 @@
+flake8
+autopep8
+lettuce
+coverage
+six==1.6.0

@@ -1,0 +1,20 @@
+---
+lenguage: python
+python:
+  - "2.7"
+
+install:
+  - "sudo pip install -r requerimientos.txt"
+  - "sudo pip install --upgrade six"
+
+before_script:
+  - "autopep8 -ir *"
+
+  - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py,*.feature *"
+
+
+script:
+  - "python EdadTest.py"
+  - lettuce
+  - coverage run --branch EdadTest.py
+  - coverage report
