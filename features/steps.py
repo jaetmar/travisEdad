@@ -2,6 +2,10 @@
 from lettuce import step, world
 from edad import Edad
 
+@step(u'cuando realizo la operación')
+def cuando_realizo_la_operacion(step):
+    pass
+
 @step(u'Dado que la edad del individuo es "([^"]*)"')
 def dado_que_la_edad_del_individuo_es_group1(step, edad):
     world.edad = Edad()

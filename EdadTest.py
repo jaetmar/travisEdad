@@ -55,10 +55,6 @@ class EdadTest(unittest.TestCase):
 		self.edad.evaluar_edad(1000)
 		self.assertEqual(self.edad.obtener_evaluacion(), 'Eres Mumm-Ra')
 
-	def test_evaluar_holamundo_igual_datosincorrectos(self):
-		self.edad.evaluar_edad('Hola Mundo')
-		self.assertEqual(self.edad.obtener_evaluacion(), 'Datos Incorrectos')
-
 	def tearDown(self):
 		pass
 
