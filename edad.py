@@ -13,7 +13,7 @@ class Edad(object):
 			if edad < 0:
 				self.evaluacion = 'No existes'
 			elif edad < 13:
-				self.evaluacion = u'Eres niño'
+				self.evaluacion = 'Eres infante'
 			elif edad < 18:
 				self.evaluacion = 'Eres adolescente'
 			elif edad < 65:

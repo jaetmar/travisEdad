@@ -13,11 +13,11 @@ class EdadTest(unittest.TestCase):
 
 	def test_evaluar_0_igual_eresninio(self):
 		self.edad.evaluar_edad(0)
-		self.assertEqual(self.edad.obtener_evaluacion(), 'Eres niño')
+		self.assertEqual(self.edad.obtener_evaluacion(), 'Eres infante')
 
 	def test_evaluar_10_igual_eresninio(self):
 		self.edad.evaluar_edad(10)
-		self.assertEqual(self.edad.obtener_evaluacion(), 'Eres niño')
+		self.assertEqual(self.edad.obtener_evaluacion(), 'Eres infante')
 
 	def test_evaluar_13_igual_eresadolescente(self):
 		self.edad.evaluar_edad(13)
